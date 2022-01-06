@@ -1,167 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <title>Document</title>
 </head>
+
 <body>
 
-  <!-- Ele fez com href em vez de Javascript as paginas -->
+  <!-- Ele fez com href em vez de Javascript as paginas eu exercitei meu javascript pra trazer essa funcionalidade por mais que talvez não seja a melhor prática valeu o exercicio :) -->
   <header>
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <a class="navbar-item" href="">
           <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
         </a>
-    
+
         <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
         </a>
       </div>
-    
+
       <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">
           <a class="navbar-item" id="aboutButton">
             Sobre
           </a>
-    
+
           <a class="navbar-item" id="contactButton">
             Contato
           </a>
 
 
-          </div>
         </div>
+      </div>
       </div>
     </nav>
   </header>
 
-
   <section class="section" id="mainSection">
+    <div class="container">
+      <div class="columns">
 
-
-    <div class="columns">
-
-<!-- Logo -->
-      <div class="column is-3">
-        <div class="card">
-          <div class="card-image">
-            <figure class="image is-4by3">
-              <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-            </figure>
-          </div>
-          <div class="card-content">
-            <div class="media">
-              <div class="media-content">
-                <p class="title is-4">Jaahn Smith</p>
-              </div>
+        <!-- Bloco informações Autor -->
+        <div class="column is-4">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+              </figure>
             </div>
-        
-            <div class="content">
-              <button class="button is-small is-fullwidth">Small</button>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4">Jaahn Smith</p>
+                  <span class="tag is-dark is-medium">Javascript Full Developer</span>
+                </div>
+              </div>
 
+              <div class="content">
+                <p>(48) 99125-9369</p>
+                <p>viniciusdandrade01@gmail.com</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="column is-9" id="mainColumn">
+        <!-- Bloco informacoes gerais -->
 
-<!-- Sobre mim -->
-        <div class="content">
+        <div class="column is-8">
+
+          <!-- Bloco sobre mim -->
           <div class="card">
-            <div class="card-header">
+            <header class="card-header">
               <p class="card-header-title">Sobre mim</p>
-            </div>
+            </header>
             <div class="card-content">
               <div class="content">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, aliquid!</p>
               </div>
             </div>
           </div>
-        </div>
-      
-          <!-- Experiencias -->
-
-
+          <!-- Bloco Experiencias -->
           
-            <!-- Card Modelo -->
-            <div class="content">
 
+          <div class="card">
 
-              <div class="card">
-                
-                <div class="card-header">
-                  <p class="card-header-title">Experiencias</p>
+            <div class="card-header">
+              <p class="card-header-title">Experiencias</p>
+            </div>
+
+            <!-- Colunas imagem / texto -->
+
+            <!-- Primeira experiencia -->
+            <div class="card-content">
+              <div class="columns" style="width: 100%;">
+
+                <!-- Imagem -->
+                <div class="column">
+                  <figure class="image is-128x128">
+                    <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
+                  </figure>
                 </div>
-    
-                <!-- Colunas imagem / texto -->
-                <div class="card-content">
-                  <div class="columns">
-    
-                    <!-- Imagem -->
-                    <div class="column is-3">
-                      <figure style="margin: 0px; width: 100%;" class="is-flex is-align-items-center is-justify-content-center image is-128x128">
-                        <img style="width: auto;
-                        height: auto;
-                        max-width: 100%;
-                        max-height: 100%;" class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png" style="border-radius: 50%;">
-                      </figure>                </div>
-    
-                    <!-- Texto -->
-                    <div class="column is-9">
-                      <div class="subtitle" style="font-weight: 600;">
-                        Javascript
-    
-                      </div>
-                      <div class="content">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum non perspiciatis ducimus animi asperiores aliquid!</p>
-                      </div>
-                    </div>
-    
-                
-                  </div>
-                </div>
-                
-                <div class="card-content">
-                  <div class="columns">
-    
-                    <!-- Imagem -->
-                    <div class="column is-3">
-                      <figure style="margin: 0px; width: 100%;" class="is-flex is-align-items-center is-justify-content-center image is-128x128">
-                        <img style="width: auto;
-                        height: auto;
-                        max-width: 100%;
-                        max-height: 100%;" class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png" style="border-radius: 50%;">
-                      </figure>                </div>
-    
-                    <!-- Texto -->
-                    <div class="column is-9">
-                      <div class="subtitle" style="font-weight: 600;">
-                        Javascript
-    
-                      </div>
-                      <div class="content">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum non perspiciatis ducimus animi asperiores aliquid!</p>
-                      </div>
-                    </div>
-    
-                
+
+                <!-- Texto -->
+                <div class="column is-9">
+                  <div class="content">
+                    <p class="title is-5">
+                      Javascript Developer
+                      <span class="tag is-dark">Empresa chamada X</span>
+                    </p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum non perspiciatis ducimus
+                      animi
+                      asperiores aliquid!</p>
                   </div>
                 </div>
 
 
               </div>
+            </div>
+
+            <hr>
+
+            <!-- Segunda experiencia -->
+            <div class="card-content">
+              <div class="columns" style="width: 100%;">
+
+                <!-- Imagem -->
+                <div class="column">
+                  <figure class="image is-128x128">
+                    <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
+                  </figure>
+                </div>
+
+                <!-- Texto -->
+                <div class="column is-9">
+                  <p class="title is-5">
+                    Javascript Developer
+                    <span class="tag is-dark">Empresa chamada X</span>
+                  </p>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum non perspiciatis ducimus animi
+                    asperiores aliquid!</p>
+                </div>
+
 
               </div>
-                
-                
+            </div>
+
+
+
+          </div>
+
+
+
+          <!-- Bloco da formação -->
+          
+          <div class="content">
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">Formação</p>
+              </header>
+              <div class="card-content">
+
+                <!-- Primeira formação  -->
+                <div class="content">
+                  <p class="title is-5">
+                    Javascript Developer
+                  </p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, aliquid!</p>
+                </div>
+
+                <hr>
+                <!-- Segunda formação  -->
+                <div class="content">
+                  <p class="title is-5">
+                    Javascript Developer
+                  </p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, aliquid!</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
 
 
 
@@ -173,79 +203,106 @@
 
         <!-- Solução complexa com JS -->
         <!-- <div class="column">
-          <div class="tabs is-boxed">
-            <ul>
+            <div class="tabs is-boxed">
+              <ul>
+                <li class="">
+                  <a>
+                    <span class="icon is-small"><i class="fas fa-image" aria-hidden="true"></i></span>
+                    <span>About</span>
+                </a>
+              </li>
+              <li class="is-active">
+                <a>
+                  <span class="icon is-small"><i class="fas fa-music" aria-hidden="true"></i></span>
+                  <span>Experience</span>
+                </a>
+              </li>
               <li class="">
                 <a>
-                  <span class="icon is-small"><i class="fas fa-image" aria-hidden="true"></i></span>
-                  <span>About</span>
-              </a>
-            </li>
-            <li class="is-active">
-              <a>
-                <span class="icon is-small"><i class="fas fa-music" aria-hidden="true"></i></span>
-                <span>Experience</span>
-              </a>
-            </li>
-            <li class="">
-              <a>
-                <span class="icon is-small"><i class="fas fa-film" aria-hidden="true"></i></span>
-                <span>Education</span>
-              </a>
-            </li>
-            <li class="">
-              <a>
-                <span class="icon is-small"><i class="far fa-file-alt" aria-hidden="true"></i></span>
-                <span>Skills</span>
-              </a>
-            </li>
-          </ul>
+                  <span class="icon is-small"><i class="fas fa-film" aria-hidden="true"></i></span>
+                  <span>Education</span>
+                </a>
+              </li>
+              <li class="">
+                <a>
+                  <span class="icon is-small"><i class="far fa-file-alt" aria-hidden="true"></i></span>
+                  <span>Skills</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div> -->
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="section" id="contactSession" style="display: none;">
+    <div class="columns">
+      <!-- Coluna do perfil -->
+      <div class="column is-4">
+        <!-- Container da foto de perfil -->
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-4">Jaahn Smith</p>
+                <span class="tag is-dark is-medium">Javascript Full Developer</span>
+              </div>
+            </div>
+
+            <div class="content">
+              <p>(48) 99125-9369</p>
+              <p>viniciusdandrade01@gmail.com</p>
+            </div>
+          </div>
         </div>
-      </div> -->
+      </div>
+      <!-- Coluna do formulario -->
+      <div class="column is-8">
+        <!-- Container do formulario -->
+        <div class="container">
 
+          <div class="field">
+            <label class="label">Email</label>
+            <div class="control has-icons-left has-icons-right">
+              <input class="input " type="email" placeholder="Email input" value="">
+              <span class="icon is-small is-left">
+                <i class="fas fa-envelope"></i>
+              </span>
+              <span class="icon is-small is-right">
+                <i class="fas fa-exclamation-triangle"></i>
+              </span>
+            </div>
+          </div>
 
+          <div class="field">
+            <label class="label">Message</label>
+            <div class="control">
+              <textarea class="textarea" placeholder="Textarea"></textarea>
+            </div>
+          </div>
+
+          <div class="field is-grouped">
+            <div class="control">
+              <button class="button is-primary">Submit</button>
+            </div>
+          </div>
+        </div>
       </div>
 
     </div>
-
   </section>
 
-
-
-  <section class="section" id="contactSession">
-    
-    <div class="card">
-      <div class="card-header">
-        <p class="card-header-title">Contato</p>
-      </div>
-      <div class="card-content">
-          <label class="label">E-mail</label>
-          <input class="input" type="text" placeholder="Digite seu e-mail">
-        
-          <label class="label">Mensagem</label>
-          <textarea class="textarea" placeholder="Digite sua mensagem"></textarea>      
-        
-    </div>
-    
-
-  </section>
-
-<style>
-  #mainColumn {
-    display: block;
-  }
-  #contactColumn {
-    display: none;
-  }
-
-  figure {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-</style>
-
-<script src="main.js"></script>
+  <script src="main.js"></script>
 </body>
 
 

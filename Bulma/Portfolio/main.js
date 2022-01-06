@@ -20,17 +20,18 @@ burger.addEventListener('click', () => {
     const mainSectionButton = document.querySelector("#aboutButton")
     const contactSectionButton = document.querySelector("#contactButton")
     const mainSection = document.querySelector('#mainSection')
-    const contactSection = document.querySelector('#contactSection')
+    const contactSection = document.querySelector('#contactSession')
     
     
     
     mainSectionButton.addEventListener('click', () => {
         mainSection.style.display = "block";
-        contactSection.style.display = "none";
+        contactSection.style.display = "none"
     });    
     contactSectionButton.addEventListener('click', () => {
         mainSection.style.display = "none";
-        contactSection.style.display = "block";
+        contactSection.style.display = "block"
+        
     });    
-
+    
     // relativo graadual 178
