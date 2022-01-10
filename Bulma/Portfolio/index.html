@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <link rel="stylesheet" href="styles.css">
   <title>Document</title>
 </head>
@@ -14,6 +15,7 @@
 <body>
 
   <!-- Ele fez com href em vez de Javascript as paginas eu exercitei meu javascript pra trazer essa funcionalidade por mais que talvez não seja a melhor prática valeu o exercicio :) -->
+  <!-- Os id's nas colunas são para utilizacao no jquery -->
   <header>
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
@@ -47,10 +49,10 @@
 
   <section class="section" id="mainSection">
     <div class="container">
-      <div class="columns">
+      <div class="columns" id="mainColumnsDiv">
 
         <!-- Bloco informações Autor -->
-        <div class="column is-4">
+        <div class="column is-4" id="profileContainer">
           <div class="card">
             <div class="card-image">
               <figure class="image is-4by3">
@@ -240,32 +242,8 @@
 
   </section>
 
-  <section class="section" id="contactSession" style="display: none;">
-    <div class="columns">
-      <!-- Coluna do perfil -->
-      <div class="column is-4">
-        <!-- Container da foto de perfil -->
-        <div class="card">
-          <div class="card-image">
-            <figure class="image is-4by3">
-              <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-            </figure>
-          </div>
-          <div class="card-content">
-            <div class="media">
-              <div class="media-content">
-                <p class="title is-4">Jaahn Smith</p>
-                <span class="tag is-dark is-medium">Javascript Full Developer</span>
-              </div>
-            </div>
-
-            <div class="content">
-              <p>(48) 99125-9369</p>
-              <p>viniciusdandrade01@gmail.com</p>
-            </div>
-          </div>
-        </div>
-      </div>
+  <section class="section" id="contactSection" style="display: none;">
+    <div class="columns" id="profileColumnsDiv">
       <!-- Coluna do formulario -->
       <div class="column is-8">
         <!-- Container do formulario -->
