@@ -5,3 +5,9 @@ navbar {
     margin-bottom: 20px;
 }
 
+
+#mainSection {}
+#mainSection #profileContainer {}
+#mainSection #profileContainer ul {
+    overflow-wrap: break-word;
+}
