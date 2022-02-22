@@ -17,7 +17,7 @@
   <!-- Ele fez com href em vez de Javascript as paginas eu exercitei meu javascript pra trazer essa funcionalidade por mais que talvez não seja a melhor prática valeu o exercicio :) -->
   <!-- Os id's nas colunas são para utilizacao no jquery -->
   <header>
-    <nav class="navbar" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-fixed-top center" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <a class="navbar-item" href="">
           <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
@@ -54,8 +54,23 @@
         <!-- Bloco informações Autor -->
         <div class="column is-4" id="profileContainer">
           <div class="card">
+            <!-- <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4">Vinicius de Andrade</p>
+                  <figure class="image is-128x128">
+                  <img class="is-rounded" src="assets/euzinho.jpeg">
+                  </figure>
+                  <span class="tag is-dark is-medium">Desenvolvedor Front-end Jr</span>
+                </div>
+              </div> -->
             <div class="card-content">
               <div class="media">
+                <div class="media-left">
+                  <figure class="image is-128x128">
+                    <img class="is-rounded" src="assets/euzinho.png" alt="Placeholder image">
+                  </figure>
+                </div>
                 <div class="media-content">
                   <p class="title is-4">Vinicius de Andrade</p>
                   <span class="tag is-dark is-medium">Desenvolvedor Front-end Jr</span>
@@ -71,12 +86,18 @@
                     <p>(48) 99125-9369</p>
                   </li>
                   <li>
-                    <p>viniciusdandrade01@gmail.com</p>    
+                    <p>viniciusdandrade01@gmail.com</p>
                   </li>
                 </ul>
                 <div id="contactIcons">
-                  <i class="fab fa-linkedin"></i>
-                  <i class="fab fa-github"></i>
+                  <a style="color: black;" target="_blank" href="https://www.linkedin.com/in/vinicius-andrade-sc/">
+                    <i class="fab fa-linkedin">
+                    </i>
+                  </a>
+                  <a style="color: black;" target="_blank" href="https://github.com/andradeviniicius">
+                    <i class="fab fa-github">
+                    </i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -94,20 +115,28 @@
             </header>
             <div class="card-content">
               <div class="content">
-                <p>Comecei a estudar programação no começo do ano passado participando de eventos de programação como os da RocketSeat e com cursos gratuitos como o de JavaScript do guanabara e FreeCodeCamp. <br> <br>
+                <p>Comecei a estudar programação no começo do ano passado participando de eventos de programação como os
+                  da RocketSeat e com cursos gratuitos como o de JavaScript do guanabara e FreeCodeCamp. <br> <br>
 
-                  Hoje sou aluno do curso CertifiedTechDev da DigitalHouse onde estudamos tudo sobre o mundo Web do Front-end ao Back-end com HTML, CSS, JS, Frameworks, bibliotecas, boas práticas e ferramentas como Trello, Figma entre outras matérias. <br>
-                  
-                  Também trabalhamos SoftSkills como metodologias ágeis, learning agility, design thinking entre outros. Meu pai trabalha como fotógrafo portanto também desenvolvi habilidades com Photoshop ao trabalhar editando as fotos de ensaios, casamentos, 15 anos e com criações próprias. <br> <br>
-                  
-                  Desde que comecei a estudar desenvolvimento venho registrando tudo que já fiz no GitHub e Notion onde você pode conferir no botão abaixo :) <br> <br>
-                  <button class="button is-link"><a style="color: white;" href="https://eggplant-jingle-128.notion.site/CertifiedTechDeveloper-a48af58b5c1741f6ac3b24c0b97fec38" target="_blank">Esse botão &#128516</a></button>
-                  </p>
+                  Hoje sou aluno do curso CertifiedTechDev da DigitalHouse onde estudamos tudo sobre o mundo Web do
+                  Front-end ao Back-end com HTML, CSS, JS, Frameworks, bibliotecas, boas práticas e ferramentas como
+                  Trello, Figma entre outras matérias. <br>
+
+                  Também trabalhamos SoftSkills como metodologias ágeis, learning agility, design thinking entre outros.
+                  Meu pai trabalha como fotógrafo portanto também desenvolvi habilidades com Photoshop e manipulação de
+                  designs ao trabalhar editando as fotos de ensaios, casamentos, 15 anos e com criações próprias. <br>
+                  <br>
+
+                  Desde que comecei a estudar desenvolvimento venho registrando tudo que já fiz no GitHub e Notion onde
+                  você pode conferir no botão abaixo :) <br> <br>
+                  <button class="button is-link"><a style="color: white;" href="https://github.com/andradeviniicius"
+                      target="_blank">Esse botão &#128516</a></button>
+                </p>
               </div>
             </div>
           </div>
           <!-- Bloco Experiencias -->
-          
+
 
           <div class="card">
             <div class="card-header">
@@ -123,7 +152,7 @@
                 <!-- Imagem -->
                 <div class="column is-3 is-vcentered has-text-centered">
                   <figure class="image is-128x128 is-inline-block">
-                    <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
+                    <img class="is-rounded" src="assets/imexLogo.png">
                   </figure>
                 </div>
 
@@ -134,8 +163,11 @@
                       Auxiliar de Sistemas
                       <span class="tag is-dark">Imex Medical Group</span>
                     </p>
-                    <p>Presto suporte aos sistemas da empresa principalmente ao ERP Sapiens via telefone ou acesso remoto realizando manutenção em telas, relatórios e regras (Delphi). Também efetuo treinamento dos usuarios,  análise e manutenção de Banco de dados Oracle envolvendo Stored Procedures e efetuando CRUD em SQL.
-                      Maio 2021 - Atualmente (8 meses)</p>
+                    <p>Suporte aos sistemas da empresa principalmente ao ERP Sapiens via telefone ou acesso
+                      remoto realizando manutenção em telas, relatórios e regras (Delphi). Também efetuo treinamento dos
+                      usuarios, análise e manutenção de Banco de dados Oracle envolvendo Stored Procedures e efetuando
+                      CRUD em SQL.
+                      Maio 2021 - Feverreiro 2022 (9 meses)</p>
                   </div>
                 </div>
 
@@ -152,17 +184,19 @@
                 <!-- Imagem -->
                 <div class="column is-3 has-text-centered">
                   <figure class="image is-128x128 is-inline-block">
-                    <img class="is-rounded " src="https://bulma.io/images/placeholders/128x128.png">
+                    <img style="width: fit-content; height: fit-content;" class="is-rounded "
+                      src="assets/salesLogo.png">
                   </figure>
                 </div>
 
                 <!-- Texto -->
                 <div class="column is-auto">
                   <p class="title is-5">
-                    Assistente de Suporte técnico 
+                    Assistente de Suporte técnico
                     <span class="tag is-dark">Sales Target Tech Center</span>
                   </p>
-                  <p>Atuei na área de Atendimento ao cliente pós vendas prestando suporte técnico em app de investimentos para corretora internacional.
+                  <p>Atuei na área de Atendimento ao cliente pós vendas prestando suporte técnico em app de
+                    investimentos para corretora internacional.
                     Fev 2021 - Maio 2021 (3 meses)</p>
                 </div>
 
@@ -177,7 +211,7 @@
 
 
           <!-- Bloco da formação -->
-          
+
           <div class="content">
             <div class="card">
               <header class="card-header">
@@ -190,12 +224,13 @@
                   <p class="title is-5">
                     CertifiedTechDeveveloper
                   </p>
-                  <p>Curso com foco em desenvolvimento de sistemas voltados para a web e conhecimentos em áreas correlatas, como infraestrutura, devops e testes. Além disso, durante o curso, serão trabalhadas skills de agilidade, trabalho em equipe e liderança.
+                  <p>Curso patrocinado pelo Mercado Libre e Globant com foco em desenvolvimento de sistemas voltados para a web e conhecimentos em áreas correlatas, como infraestrutura, devops e testes. Além disso, durante o curso, serão trabalhadas skills de agilidade, trabalho em equipe e liderança.
 
-                    Confira meu progresso clicando <a href="https://github.com/andradeviniicius/CertifiedTechDev">aqui</a> :)
-                    
-                    
-                    </p>
+                    Confira meu progresso clicando <a
+                      href="https://github.com/andradeviniicius/CertifiedTechDev">aqui</a> :)
+
+
+                  </p>
                 </div>
 
                 <hr>

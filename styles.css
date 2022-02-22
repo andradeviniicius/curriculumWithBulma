@@ -1,5 +1,6 @@
-navbar {
-    margin-bottom: 40px;
+.center {
+    /* display: flex; */
+    /* align-items: center; */
 }
 .card {
     margin-bottom: 20px;
